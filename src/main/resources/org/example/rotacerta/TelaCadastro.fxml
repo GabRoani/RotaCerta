@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" fx:controller="org.example.rotacerta.screens.CadastroUserController" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="75.00000762939453" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="474.0" minWidth="10.0" prefWidth="474.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onCadastrarButtonClick" prefHeight="69.0" prefWidth="116.0" text="Cadastrar" GridPane.rowIndex="3" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Viajante:" textAlignment="CENTER" wrappingWidth="128.91405487060547" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="        Rota Certa" wrappingWidth="474.9831027984619" GridPane.columnIndex="1">
+            <font>
+                <Font size="43.0" />
+            </font>
+        </Text>
+        <TreeTableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <columns>
+                <TreeTableColumn prefWidth="124.00003051757812" text="Km Viajados" />
+                <TreeTableColumn prefWidth="124.00003051757812" text="Viagens Feitas" />
+                <TreeTableColumn prefWidth="149.00003051757812" text="Gastos" />
+            </columns>
+            <columnResizePolicy>
+                <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TreeTableView>
+        <TextField prefHeight="26.0" prefWidth="334.0" fx:id="viajanteField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Senha:" textAlignment="CENTER" wrappingWidth="128.91405487060547" GridPane.rowIndex="2">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <TextField prefHeight="26.0" prefWidth="334.0" fx:id="senhaField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    </children>
+</GridPane>
