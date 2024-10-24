@@ -28,7 +28,7 @@ public class CadastroUserController {
             stmt.setString(1, viajante);
             stmt.setString(2, senha);
             stmt.executeUpdate();
-            System.out.println("Usuário cadastrado com sucesso!");
+            System.out.println("Usuário cadastrado com sucesso!!!");
         } catch (SQLException e) {
             e.printStackTrace();
         }
