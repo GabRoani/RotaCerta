@@ -22,6 +22,11 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
+        <Button fx:id="calcularBtn" text="Calcular Custo"
+                onAction="#calcularviagem"
+                GridPane.rowIndex="9" GridPane.columnIndex="1"
+                style="-fx-background-color: #2196F3; -fx-text-fill: white;"/>
+
         <Button alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onCadastrarButtonClick" prefHeight="69.0" prefWidth="116.0" text="Cadastrar" GridPane.rowIndex="3" />
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Viajante:" textAlignment="CENTER" wrappingWidth="128.91405487060547" GridPane.rowIndex="1">
             <font>

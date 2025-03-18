@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane style="-fx-padding: 20; -fx-hgap: 20; -fx-vgap: 20; -fx-background-color: #F3F4F6;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rotacerta.service.CadastroUsuarioService">
+
+    <!-- Configurações das Colunas -->
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+    </columnConstraints>
+
+    <!-- Configurações das Linhas -->
+    <rowConstraints>
+        <RowConstraints minHeight="50.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="40.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="20.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <children>
+        <!-- Título Chamativo -->
+        <Text style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-fill: #2C3E50; -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.5), 5, 0.0, 2, 2);" text="Cadastro no RotaCerta" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <!-- Campos de Entrada -->
+        <Text style="-fx-font-size: 16px; -fx-fill: #34495E;" text="Usuário" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="UsernameCadastroField" promptText="Digite o nome de usuário" style="-fx-font-size: 16px; -fx-padding: 8px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Text style="-fx-font-size: 16px; -fx-fill: #34495E;" text="Senha" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <PasswordField fx:id="PasswordCadastroField" promptText="Digite a senha" style="-fx-font-size: 16px; -fx-padding: 8px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Text style="-fx-font-size: 16px; -fx-fill: #34495E;" text="Email" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="EmailCadastroField" promptText="Digite o email" style="-fx-font-size: 16px; -fx-padding: 8px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+        <Text style="-fx-font-size: 16px; -fx-fill: #34495E;" text="CPF" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="CPFCadastroField" promptText="Digite o CPF" style="-fx-font-size: 16px; -fx-padding: 8px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+        <!-- Botões -->
+        <Button fx:id="UsuarioBtn" onAction="#CadastroUsuarioOnClick" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8px 15px; -fx-font-weight: bold; -fx-cursor: hand;" text="Cadastrar Usuário" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Button fx:id="VoltarBtn" onAction="#VoltarMenuOnClick" style="-fx-background-color: #1ABC9C; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 8px 15px; -fx-font-weight: bold; -fx-cursor: hand;" text="Menu Inicial" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+        <!-- Label de Status -->
+        <Label fx:id="statusLabel" style="-fx-text-fill: #E74C3C; -fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    </children>
+</GridPane>

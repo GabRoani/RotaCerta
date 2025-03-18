@@ -1,4 +1,4 @@
-package org.example.rotacerta.screens;
+package org.example.rotacerta.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

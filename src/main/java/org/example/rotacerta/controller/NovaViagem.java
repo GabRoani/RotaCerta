@@ -1,4 +1,4 @@
-package org.example.rotacerta.screens;
+package org.example.rotacerta.controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class NovaViagemApplication extends Application {
+public class NovaViagem extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(NovaViagemApplication.class.getResource("/org/example/rotacerta/TelaNovaViagem.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(NovaViagem.class.getResource("/org/example/rota certa/TelaNovaViagem.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 500);
         stage.setTitle("RotaCerta");
         stage.setScene(scene);

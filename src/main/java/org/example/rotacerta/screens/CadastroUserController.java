@@ -3,6 +3,7 @@ package org.example.rotacerta.screens;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import org.example.rotacerta.config.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +11,7 @@ import java.sql.SQLException;
 
 public class CadastroUserController {
 
-    @FXML
-    private TextField viajanteField;
+    @FXML    private TextField viajanteField;
     @FXML
     private TextField senhaField;
     @FXML

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.rotacerta.controller.ListaViagemController">
+    <children>
+        <TableView fx:id="tabelaViagens" layoutX="14.0" layoutY="32.0" prefHeight="200.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="colunaCpf" text="CPF" />
+                <TableColumn fx:id="colunaKmLitro" text="Km/Litro" />
+                <TableColumn fx:id="colunaKmTotal" text="Km Total" />
+                <TableColumn fx:id="colunaPreco" text="Preço Combustível" />
+                <TableColumn fx:id="colunaCustoTotal" text="Custo Total" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonVoltar" layoutX="270.0" layoutY="250.0" text="Voltar" onAction="#voltar" />
+    </children>
+</AnchorPane>
